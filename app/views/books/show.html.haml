@@ -1,0 +1,30 @@
+-# in app/views/books/show.html.haml
+%h2 Details:
+
+%h3 #{@book.title}
+%ul#details
+  %li
+    Genre:
+    = @book.genre
+  %li
+    Published on:
+    = @book.publish_date.strftime("%B %d, %Y")
+  %li
+    Author:
+    = @book.author
+  %li
+    ISBN:
+    = @book.isbn
+
+%h4 Description:
+
+%p#description= @book.description
+-# modify last 2 lines of app/views/movies/show.html.haml to:
+%li
+  =  link_to 'Edit info', edit_book_path(@book)
+%li
+  = link_to 'Find similar books', search_similar_books_url(id: @book.id)
+%li
+  = link_to 'Back to book list', books_path
+%li
+  = link_to 'Delete', book_path(@book), :method => :delete

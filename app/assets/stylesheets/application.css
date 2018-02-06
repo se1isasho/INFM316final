@@ -1,0 +1,68 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #e3e9f2;
+  color: black;
+  font-family: 'Lora', serif;
+  font-size: 10pt;
+}
+#main {
+  margin: 0;
+  padding: 0 20px 20px;
+}
+a {
+  background: transparent;
+  color: darkblue;
+  text-decoration: underline;
+  font-weight: bold;
+}
+h1 {
+  color: darkblue;
+  font-size: 200%;
+  font-style: ariel;
+  display: block;
+  width: 100%;
+  background-color: #e3e9f2;
+  border-bottom: 1px solid DarkSlateGrey;
+}
+.title {
+  margin: 0 0 1em;
+  padding: 10px;
+  background-color: #f5f5f5;
+  color: white;
+  border-bottom: 4px solid gold;
+  font-size: 2em;
+  font-style: normal;
+}
+#books {
+  margin: 10px;
+  border-collapse: collapse;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+#books th {
+  border: 2px solid black;
+  font-weight: bold;
+  background-color: wheat;
+}
+#books th, #books td {
+  padding: 50px;
+  text-align: center;
+}
+#notice, #warning {
+  background: rosybrown;
+  margin: 1em 0;
+  padding: 4px;
+}
+form label {
+  display: block;
+  line-height: 25px;
+  font-weight: bold;
+  color: black;
+  background-color: #e3e9f2;
+  border-bottom: 1px solid black;
+
+  
+}
+
+
